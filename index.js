@@ -4,7 +4,9 @@ const fs = require("fs");
 
 const app = express();
 app.use(cors());
+app.use(express.static("frontend"));
 app.use(express.json());
+if (false /* Make true if in dev */) process.env.PORT = 3000;
 app.listen(process.env.PORT);
 
 app.post("", (req, res) => {
@@ -21,3 +23,7 @@ app.get("", (req, res) => {
 app.get("/results", (req, res) =>
   res.status(200).sendFile("./data.csv", { root: __dirname })
 );
+
+app.get("/feedback", (req, res) => {
+  res.status(200).sendFile("./frontend/index.html", { root: __dirname });
+});
