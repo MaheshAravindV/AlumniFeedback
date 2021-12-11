@@ -16,14 +16,6 @@ app.post("", (req, res) => {
   res.status(200).send("Success Entry added");
 });
 
-app.get("", (req, res) => {
-  res.send("Use POST method and send the data in body as JSON");
-});
-
 app.get("/results", (req, res) =>
   res.status(200).sendFile("./data.csv", { root: __dirname })
 );
-
-app.get("/feedback", (req, res) => {
-  res.status(200).sendFile("./frontend/index.html", { root: __dirname });
-});
