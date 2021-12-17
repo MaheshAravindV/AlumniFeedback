@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+      <title></title>
+
+  
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+   
+<nav class="navbar fixed-top  navbar-light  " style=" 
+background: #830000; 
+border-radius: 2px;
+box-shadow: 0px 1px 10px #999;">
+
+
+
+
+ 
+  <ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+  <a class="navbar-brand float-center img" href="#">
+<img class="img" src="image/logo.png" width="700" height="50" alt=""> </a>
+</li>
+</ul>
+
+
+
+<span class="navbar-text text-center text-light " style="font-size:22px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ">
+  DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
+    </span>
+
+</nav>
+
+
+  
+ <!-- Bootstrap -->
+ <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/font-awesome.css" rel="stylesheet">
+
+
+ <script src="js/jquery-1.11.1.min.js"></script>
+
+
+ <style>
+    @media only screen {
+  
+  body{
+      margin-top: 160px;            }
+  }
+  
+    @media screen and (max-width:600px){
+    /*mobile phone: uncollapse all fields: remove progress bar*/
+    
+    body{
+      margin-top: 200px;            
+  }
+  
+  
+    .img {
+     margin-left:20px ;
+      width:85%;
+     
+    }
+  
+    .txt{
+      
+     margin-left:20px ;
+    text-align: center;
+   
+    }
+    .card{
+  width: 80%;
+  
+    }
+    }
+  ul#stepForm, ul#stepForm li {
+   margin: 0;
+   padding: 0;
+  }
+  ul#stepForm li {
+   list-style: none outside none;
+  } 
+  label{margin-top: 10px;}
+  .help-inline-error{color:red;}
+  </style>
+  
+
+  <div class="container">
+      <div class= " shadow-lg  rounded card mx-auto  rounded  fixed-center" style="width: auto; height: auto;  border-radius: 5px;
+      box-shadow: 0px 1px 10px #999;  border-color:#DFDFDF;">
+      
+      <div class="card-header fw-bold bg-danger" style="font-size: 24px;">
+      
+       
+                 <p style="font-size: 24px;" class="text-light">   Parents Feedback</p>
+             
+              
+                 <div class="row">
+                    <div class="col">
+                
+     <!-- <h5 class="text-dark">Complete this form in quick 10 steps!</h5> -->
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                    
+                    <div class="col">  
+                           
+                          </div>
+                  </div>
+
+                  
+             
+                  
+
+
+              </form>
+  
+  
+  
+      </div>
+
+      <div class="card-body">
+
+
+
+   <form name="basicform" id="basicform" method="post" action="yourpage.html">
+      
+         
+          <div class="mb-3">
+              <label for="uname" class="form-label">Student Name</label>
+              <input type="text" class="form-control" id="uname" name="uname" placeholder="" required>
+            </div>
+
+            
+          <div class="mb-3">
+              <label for="pn" class="form-label">Parent Name</label>
+              <input type="text" class="form-control" id="pn" name="pn" placeholder="" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Date " class="form-label">Date  </label>
+                <input type="text" class="form-control" id="Date" name="Date" placeholder="" required>
+              </div>
+
+           
+
+         
+          <div class="mb-3">
+            <label for="MobileNo" class="form-label" >Mobile NO</label>
+            <input type="text" class="form-control" id="MobileNo" name="MobileNo" placeholder="" required>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="ParentOccupation  " class="form-label">Parent Occupation </label>
+            <input type="text" class="form-control" id="ParentOccupation" placeholder="" name="ParentOccupation  " required>
+          </div>
+
+
+               
+
+                        <div class="mb-3">
+                            <label for="mips" class="form-label ">1. The specific reason(s) on your choice of TCE and IT Department for your ward is/are:(Select more than one options, if needed) * </label>
+                        <ul class="list-group" id = "reason">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" id="specificreason" name="specificreason" value="Vicinity and Location (situated in Madurai City)" aria-label="...">
+                              Vicinity and Location (situated in Madurai City)
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" id="specificreason" name="specificreason" value="TCE has better job offers for Students" aria-label="...">
+                              TCE has better job offers for Students
+
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox"  id="specificreason" name="specificreason" value="  TCE – IT Department selected based on my ward’s cut-off marks" aria-label="...">
+                              TCE – IT Department selected based on my ward’s cut-off marks
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox"  id="specificreason" name="specificreason" value="My ________ (friends/relatives/son/daughter/TCE Alumni) recommended BTech IT Programme" aria-label="...">
+                              My ________ (friends/relatives/son/daughter/TCE Alumni) recommended BTech IT Programme
+                            </li>
+                            <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"id="specificreason" name="specificreason" value=" TCE is one among the best Engineering Institutes in TamilNadu/India" aria-label="...">
+                                    TCE is one among the best Engineering Institutes in TamilNadu/India
+
+                                  </li>
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" id="specificreason" name="specificreason" value="TCE ambience and environment" aria-label="...">
+                                    TCE ambience and environment
+
+      
+                                  </li>
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"  id="specificreason" name="specificreason" value=" TCE is Govt. aided College and Cost affordable" aria-label="...">
+                                    TCE is Govt. aided College and Cost affordable
+
+                                  </li>
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"  id="specificreason" name="specificreason" value=" BTech IT Programme has updated Curriculum with latest Syllabus" aria-label="...">
+                                    BTech IT Programme has updated Curriculum with latest Syllabus
+
+                                  </li>
+                          </ul>
+                        </div>
+
+
+
+                        
+
+                        <div class="mb-3">
+                                <label for="mips" class="form-label ">2. What do you expect your ward to become after B.Tech IT graduation at TCE? *</label>
+                            <ul class="list-group" id = "expectation" >
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" id="expect" name="expect" value=" A Software engineer with job offer(s)
+                                  " aria-label="...">
+                                  A Software engineer with job offer(s)
+
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox"  id="expect" name="expect"value="  A Researcher with Higher Studies opportunities" aria-label="...">
+                                  A Researcher with Higher Studies opportunities
+
+    
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox"  id="expect" name="expect" value=" An Entrepreneur" aria-label="...">
+                                  An Entrepreneur
+
+                                </li>
+                               
+                              </ul>
+                            </div>
+
+
+
+                            
+
+                        <div class="mb-3">
+                                <label for="mips" class="form-label">3. Do you feel that your expectations about your ward be fulfilled by us? * </label>
+                            <ul class="list-group" id = "belief">
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" id="fulfilled" name="fulfilled" value="Definitely" aria-label="...">
+                                  Definitely
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox"  id="fulfilled" name="fulfilled" value="Moderately" aria-label="...">
+                                  Moderately
+    
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox"   id="fulfilled" name="fulfilled" value=" Not sure" aria-label="...">
+                                  Not sure
+                                </li>
+                              
+                              </ul>
+                            </div>
+
+
+                        
+
+          <div class="mb-3">
+                <label for="text4" class="form-label">4. Give your valuable suggestions for further improvement. *</label>
+                <textarea class="form-control" id="text4" name="suggestions" rows="3"></textarea>
+              </div>
+    
+
+            
+   
+    <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <a  href="Index.html" class="btn btn-warning " type="button"><span class="fa fa-arrow-left"></span> Back</a> 
+          <button class="btn btn-primary open10" type="button">Submit </button> 
+          <img src="spinner.gif" alt="" id="loader" style="display: none">
+        </div>
+      </div>
+   
+       
+  
+
+
+
+     
+   </form>
+ </div>
+ </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript">
+
+function show_alert() {
+  alert("Kindly, finalize the details, can't able to go back.");
+}
+
+
+jQuery().ready(function() {
+
+ // validate form on keyup and submit
+ var v = jQuery("#basicform").validate({
+   rules: {
+     name: {
+       required: true,
+       minlength: 2,
+       maxlength: 16
+     },
+     
+
+
+     MobileNo : {
+       required: true,
+       minlength: 2,
+       maxlength: 16
+     },
+
+     uemail: {
+       required: true,
+       minlength: 2,
+       email: true,
+       maxlength: 100,
+     },
+
+            
+     pn: {
+              required: true,
+              minlength: 2,
+              maxlength: 100
+            },
+
+            Date: {
+              required: true,
+              minlength: 2,
+              maxlength: 100
+            },
+
+            nicer: {
+              required: true,
+              minlength: 2,
+              maxlength: 100
+            },
+
+
+            ParentOccupation: {
+              required: true,
+              minlength: 2,
+              maxlength: 100
+            },
+
+            
+            specificreason: {
+              required: true,
+             
+            },
+
+            expect: {
+              required: true,
+             
+            },
+            fulfilled: {
+              required: true,
+             
+            },
+
+   },
+   errorElement: "span",
+   errorClass: "help-inline-error",
+ }); 
+
+
+
+
+
+
+
+
+
+ $(".open10").click(function() {
+   if (v.form()) {
+     const name = document.getElementById('uname').value;
+     const parentname = document.getElementById('pn').value
+     const date = document.getElementById('Date').value
+     const mobno = document.getElementById('MobileNo').value
+     const parentocc = document.getElementById('ParentOccupation').value
+     const suggestions = document.getElementById('text4').value
+     let reason = '',expectation = '',belief = ''
+     for(let child of document.getElementById('reason').children){
+      if(child.children[0].checked) reason += '|' + child.innerText
+    }
+    for(let child of document.getElementById('expectation').children){
+      if(child.children[0].checked) expectation += '|' + child.innerText
+    }
+    for(let child of document.getElementById('belief').children){
+      if(child.children[0].checked) belief += '|' + child.innerText
+    }
+    const data = [name,parentname,date,mobno,parentocc,reason,expectation,belief,suggestions]
+    fetch('http://localhost:3000/',{
+       method:'POST',
+       headers: {'Content-Type': 'application/json'},
+       body:JSON.stringify({row:data,formtype:"parent-feedback"})
+     })
+     $("#loader").show();
+      setTimeout(function(){
+        $("#basicform").html('<h2>Thanks for your time.</h2>');
+      }, 1000);
+     return false;
+   }
+ });
+ 
+ $(".back2").click(function() {
+   $(".frm").hide("fast");
+   $("#sf1").show("slow");
+ });
+
+ $(".back3").click(function() {
+   $(".frm").hide("fast");
+   $("#sf2").show("slow");
+ });
+
+ 
+ $(".back4").click(function() {
+   $(".frm").hide("fast");
+   $("#sf3").show("slow");
+ });
+
+ 
+ $(".back5").click(function() {
+   $(".frm").hide("fast");
+   $("#sf4").show("slow");
+ });
+
+ 
+ $(".back6").click(function() {
+   $(".frm").hide("fast");
+   $("#sf5").show("slow");
+ });
+
+ 
+ $(".back7").click(function() {
+   $(".frm").hide("fast");
+   $("#sf6").show("slow");
+ });
+
+ 
+ $(".back8").click(function() {
+   $(".frm").hide("fast");
+   $("#sf7").show("slow");
+ });
+
+
+ 
+ $(".back9").click(function() {
+   $(".frm").hide("fast");
+   $("#sf8").show("slow");
+ });
+
+
+
+ $(".back10").click(function() {
+   $(".frm").hide("fast");
+   $("#sf9").show("slow");
+ });
+
+ 
+ 
+
+ 
+
+
+
+
+});
+</script>
+
+
+
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
+<!-- end document-->

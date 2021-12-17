@@ -97,24 +97,36 @@ box-shadow: 0px 1px 10px #999;">
   } 
   label{margin-top: 10px;}
   .help-inline-error{color:red;}
+
+  hr {
+ 
+
+	border-bottom: 2px solid black;
+	box-shadow: 0 10px 20px 4px grey;
+
+}
+
+label{
+
+ margin-left: 50%;
+}
+
+a{
+ margin-top: 10%;
+}
   </style>
   
 
   <div class="container">
-      <div class= " shadow-lg bg-white rounded card mx-auto  rounded  fixed-center" style="width: 80%; height: auto;  border-radius: 5px;
+      <div class= " shadow-lg bg-white rounded card mx-auto  rounded  fixed-center" style="width: 60%; height: auto;  border-radius: 5px;
       box-shadow: 0px 1px 10px #999;  border-color:#DFDFDF;">
       
       <div class="card-header fw-bold bg-info" style="font-size: 24px;">
-      
+      <br>
        
-                 <p style="font-size: 24px;">  Recruiter's Feedback</p>
+                 <p style="font-size: 24px;" class="text-center">  FEEDBACK</p>
              
-              
-     <h5 class="text-dark">Complete this form in quick 5 steps!</h5>
-             
-                  
-             
-              </form>
+       
   
   
   
@@ -122,608 +134,75 @@ box-shadow: 0px 1px 10px #999;">
 
       <div class="card-body">
 
-
-
-   <form name="basicform" id="basicform" method="post" action="yourpage.html">
-     
-     <div id="sf1" class="frm">
-       <fieldset>
-          <legend>Step 1 of 5 </legend>
-         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address:</label>
-            <input type="email" class="form-control" id="email" placeholder="Email address@gmail.com">
-          </div>
-
-          <div class="mb-3">
-            <label for="input1" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="">
-          </div>
-
-          <div class="mb-3">
-            <label for="input2" class="form-label">Designation:</label>
-            <input type="text" class="form-control" id="role" placeholder="">
-          </div>
-
-
-          <div class="mb-3">
-            <label for="input3" class="form-label">Name of the organization in which you are working:</label>
-            <input type="text" class="form-control" id="org" placeholder="">
-          </div>
-
-
-    
-
-         
-
-          <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-2">
-                <button class="btn btn-primary open1" type="button">Next <span class="fa fa-arrow-right"></span></button> 
-              </div>
-            </div>
-
-
-       </fieldset>
-     </div>
-
-     <div id="sf2" class="frm" style="display: none;">
-       <fieldset>
-         <legend>Step 2 of 5</legend>
-
-        <h6> Please use a 4 (excellent) to 1 (poor) scale to rank the ability of our students in terms of the following parameters:
-          </h6>
-
-         <div class="form-group">
-            <b><label for="" class="form-label">a) Problem Solving Skill (Mark only one) *</label></b>
-           
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="a" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="a" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="a" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="a" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">b) Programming Skill (Mark only one) *</label></b>
-
-           <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="b" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="b" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="b" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="b" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">c) Critical Thinking/Analytical Skill (Mark only one) *</label></b>
- <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="c" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="c" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="c" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="c" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-
-
-
-         <br>
-         <div class="form-group">
-
-            <b><label for="" class="form-label">d) Communication (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="d" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="d" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="d" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="d" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">e) Interpersonal skills (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="e" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="e" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="e" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="e" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-         <br>
-
-
-         <div class="clearfix" style="height: 10px;clear: both;"></div>
-
-
-
-         <div class="clearfix" style="height: 10px;clear: both;"></div>
-
         
-         <div class="form-group">
-           <div class="col-lg-10 col-lg-offset-2">
-             <button class="btn btn-warning back2" type="button"><span class="fa fa-arrow-left"></span> Back</button> 
-             <button class="btn btn-primary open2" type="button">Next <span class="fa fa-arrow-right"></span></button> 
-           </div>
-         </div>
+                  <div class="row">
+                      
+                        <div class="col">
+                       <label>Recuriters Feedback</label>
+                        </div>
+                        <div class="col">
+                         
+                        </div>
+                        
+                        <div class="col">  
+                                <a href="Recuriters.html" type="button" class="btn btn-sm btn-outline-primary">Open</a>
+                              </div>
+                      </div>
 
-       </fieldset>
-     </div>
+                      <hr ></hr>
 
-<!--  -->
+                      <div class="row">
+                            <div class="col">
+                           <label >Parent's Feedback</label>
+                            </div>
+                            <div class="col">
+                             
+                            </div>
+                            
+                            <div class="col">  
+                                    <div class="col">  
+                                            <a href="pf.html" type="button" class="btn btn-sm btn-outline-primary">Open</a>
+                                          </div>
+                                  </div>
+                          </div>
 
-     <div id="sf3" class="frm" style="display: none;">
-        <fieldset>
-          <legend>Step 3 of 5</legend>
- 
-
-          <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label"> f) Leadership Skills (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="f" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="f" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="f" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="f" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-         <br>
-
-
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">g) Ability to become a team player (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="g" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="g" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="g" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
+                          <hr></hr>
+                          <div class="row">
+                                <div class="col">
+                               <label>Graduate Exit Survey</label>
+                                </div>
+                                <div class="col">
+                                 
+                                </div>
+                                
+                                <div class="col">  
+                                        <div class="col">  
+                                                <a href="ges.html" type="button" class="btn btn-sm btn-outline-primary">Open</a>
+                                              </div>
+                                      </div>
+                              </div>
 
 
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="g" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
+                              <hr></hr>
+                              <div class="row">
+                                    <div class="col">
+                                   <label>Course Exit Survey</label>
+                                    </div>
+                                    <div class="col">
+                                     
+                                    </div>
+                                    
+                                    <div class="col">  
+                                            <div class="col">  
+                                                    <a href="ces.html" type="button" class="btn btn-sm btn-outline-primary">Open</a>
+                                                  </div>
+                                          </div>
+                                  </div>
 
-         </div>
-         <br>
-
-
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">h) System Engineering Skills (for building Hardware/Software/Products/Designs) (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="h" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="h" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="h" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="h" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-         <br>
+                                  <hr></hr>
+                   
 
 
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label">i) Ability to design and develop solutions with a comprehension of the design trade-offs involved (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="i" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="i" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="i" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="i" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-         <br>
-
-
-         <br>
-
-         <div class="form-group">
-
-            <b><label for="" class="form-label"> j) Ability to work with or knowledge about servers, systems, Integrated Development Environments (IDE), design and testing tools (Mark only one) *</label></b>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="j" id="inlineRadio1" value="Excellent">
-                <label class="form-check-label" for="inlineRadio1">Excellent</label>
-              </div>
-            
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="j" id="inlineRadio2" value="Good">
-                <label class="form-check-label" for="inlineRadio2">Good</label>
-              </div>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="j" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Average</label>
-                </div>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="j" id="inlineRadio3" value="Poor">
-                <label class="form-check-label" for="inlineRadio3">Poor</label>
-              </div>
-
-         </div>
-         <br>
-
-
-          <div class="clearfix" style="height: 10px;clear: both;"></div>
-
-
-
-          <div class="clearfix" style="height: 10px;clear: both;"></div>
- 
-          
- 
-          <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-              <button class="btn btn-warning back3" type="button"><span class="fa fa-arrow-left"></span> Back</button> 
-              <button class="btn btn-primary open3" type="button">Next <span class="fa fa-arrow-right"></span></button> 
-            </div>
-          </div>
- 
-        </fieldset>
-      </div>
-
-
-      
-
-     <div id="sf4" class="frm" style="display: none;">
-        <fieldset>
-          <legend>Step 4 of 5</legend>
-          <div class="form-group">
-              <b><label for="" class="form-label">k) Knowledge about contemporary fields in Computer Science and Engineering (Mark only one) *</label></b>
-             
-              <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="k" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="k" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="k" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="k" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-  
-           <br>
-  
-           <div class="form-group">
-  
-              <b><label for="" class="form-label">l) Life Skills (Time management and Prioritization) (Mark only one) *</label></b>
-  
-             <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="l" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="l" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="l" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="l" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-  
-  
-           <br>
-  
-           <div class="form-group">
-  
-              <b><label for="" class="form-label">m) Exposure to the impact of Information and Communication Technology (ICT) solutions on the environment and Society (Mark only one) *</label></b>
-   <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="m" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="m" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="m" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="m" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-  
-  
-  
-           <br>
-           <div class="form-group">
-  
-              <b><label for="" class="form-label">n) Knowledge of sustainable product development (Mark only one) *</label></b>
-              <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="n" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="n" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="n" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="n" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-  
-           <br>
-  
-           <div class="form-group">
-  
-              <b><label for="" class="form-label"> o) Professional Ethics (Mark only one) *</label></b>
-              <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="o" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-              
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="o" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="o" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="o" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-           <br>
-
-
-           <div class="form-group">
-  
-              <b><label for="" class="form-label"> p) Project management Skills and awareness about finance management (Mark only one) *</label></b>
-              <br>
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="p" id="inlineRadio1" value="Excellent">
-                  <label class="form-check-label" for="inlineRadio1">Excellent</label>
-                </div>
-              
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="p" id="inlineRadio2" value="Good">
-                  <label class="form-check-label" for="inlineRadio2">Good</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="p" id="inlineRadio2" value="Good">
-                    <label class="form-check-label" for="inlineRadio2">Average</label>
-                  </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="p" id="inlineRadio3" value="Poor">
-                  <label class="form-check-label" for="inlineRadio3">Poor</label>
-                </div>
-  
-           </div>
-           <br>
-
-           <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-2">
-                <button class="btn btn-warning back4" type="button"><span class="fa fa-arrow-left"></span> Back</button> 
-                <button class="btn btn-primary open4" type="button">Next <span class="fa fa-arrow-right"></span></button> 
-              </div>
-            </div>
- 
-        </fieldset>
-      </div>
-
-
-      <div id="sf5" class="frm" style="display: none;">
-          <fieldset>
-            <legend>Step 5 of 5</legend>
-   <h5><b>Summary</b></h5>
-   <div class="form-group">
-  
-      <b><label for="" class="form-label"> q) Your overall rating about our students (Mark only one) *</label></b>
-      <br>
-      <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="q" id="inlineRadio1" value="Excellent">
-          <label class="form-check-label" for="inlineRadio1">Excellent</label>
-        </div>
-      
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="q" id="inlineRadio2" value="Good">
-          <label class="form-check-label" for="inlineRadio2">Good</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q" id="inlineRadio2" value="Good">
-            <label class="form-check-label" for="inlineRadio2">Average</label>
-          </div>
-
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="q" id="inlineRadio3" value="Poor">
-          <label class="form-check-label" for="inlineRadio3">Poor</label>
-        </div>
-
-   </div>
-   <br>
-
-   <div class="mb-3">
-      <label for="text4" class="form-label"> <b>Any further Suggestions *</b></label>
-      <textarea class="form-control" id="feedback" rows="4"></textarea>
-    </div>
-
-
-            
-   
-    <div class="form-group">
-        <div class="col-lg-10 col-lg-offset-2">
-          <button class="btn btn-warning back5" type="button"><span class="fa fa-arrow-left"></span> Back</button> 
-          <button class="btn btn-primary open6" type="button">Submit </button> 
-          <img src="spinner.gif" alt="" id="loader" style="display: none">
-        </div>
-      </div>
-   
-          </fieldset>
-        </div>
-   </form>
  </div>
  </div>
 </div>
@@ -802,22 +281,6 @@ jQuery().ready(function() {
 
  $(".open6").click(function() {
    if (v.form()) {
-     const email = document.getElementById('email').value;
-     const name = document.getElementById('name').value
-     const role = document.getElementById('role').value
-     const org = document.getElementById('org').value
-     const feedback = document.getElementById('feedback').value
-     const data = [email,name,role,org]
-     for(let q = 0;q < 17;q++){
-      document.getElementsByName(String.fromCharCode(q+97)).forEach((value,index)=>{if(value.checked) data.push(index)})
-     }  
-     data.push(feedback)
-     console.log(JSON.stringify({row:data}))
-     fetch('https://alumnifeedback.herokuapp.com/',{
-       method:'POST',
-       headers: {'Content-Type': 'application/json'},
-       body:JSON.stringify({row:data})
-     })
      $("#loader").show();
       setTimeout(function(){
         $("#basicform").html('<h2>Thanks for your time.</h2>');
