@@ -20,6 +20,18 @@ app.post("", (req, res) => {
   res.status(200).send("Success Entry added");
 });
 
-app.get("/recresult", (req, res) =>
+app.get("/recruiter-result", (req, res) =>
   res.status(200).sendFile("./recruiters-feedback.csv", { root: __dirname })
+);
+
+app.get("/parent-result", (req, res) =>
+  res.status(200).sendFile("./parent-feedback.csv", { root: __dirname })
+);
+
+app.get("/graduate-result", (req, res) =>
+  res.status(200).sendFile("./graduate-feedback.csv", { root: __dirname })
+);
+
+app.get("/course-result", (req, res) =>
+  res.status(200).sendFile("./ces-feedback.csv", { root: __dirname })
 );
