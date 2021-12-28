@@ -409,7 +409,7 @@ jQuery().ready(function() {
       if(child.children[0].checked) belief += '|' + child.innerText
     }
     const data = [name,parentname,date,mobno,parentocc,reason,expectation,belief,suggestions]
-    fetch('https://tcecsefeedback.herokuapp.com//',{
+    fetch('http://localhost:3000',{
        method:'POST',
        headers: {'Content-Type': 'application/json'},
        body:JSON.stringify({row:data,formtype:"parent-feedback"})

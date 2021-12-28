@@ -863,7 +863,7 @@ q: {
       document.getElementsByName(String.fromCharCode(q+97)).forEach((value,index)=>{if(value.checked) data.push(index)})
      }  
      data.push(feedback)
-     fetch('https://tcecsefeedback.herokuapp.com//',{
+     fetch('http://localhost:3000',{
        method:'POST',
        headers: {'Content-Type': 'application/json'},
        body:JSON.stringify({row:data,formtype:"recruiters-feedback"})

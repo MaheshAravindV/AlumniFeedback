@@ -6,9 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.static("frontend"));
 app.use(express.json());
-if (false /* Make true if in dev */) process.env.PORT = 3000;
+if (true /* Make true if in dev */) process.env.PORT = 3000;
 app.listen(process.env.PORT);
-
 app.post("", (req, res) => {
   console.log(req.body);
   fs.appendFileSync(
@@ -21,6 +20,6 @@ app.post("", (req, res) => {
   res.status(200).send("Success Entry added");
 });
 
-app.get("/results", (req, res) =>
-  res.status(200).sendFile("./data.csv", { root: __dirname })
+app.get("/recresult", (req, res) =>
+  res.status(200).sendFile("./recruiters-feedback.csv", { root: __dirname })
 );

@@ -337,10 +337,8 @@ box-shadow: 0px 1px 10px #999;">
                   </div>
                 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="r16" id="inlineRadio2" value="Not Available
-                    " required>
-                    <label class="form-check-label" for="inlineRadio2">Not Available
-                        </label>
+                    <input class="form-check-input" type="radio" name="r16" id="inlineRadio2" value="Not Available" required>
+                    <label class="form-check-label" for="inlineRadio2">Not Available                       </label>
                   </div>
                   <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="r16" id="inlineRadio2" value="More copies required
@@ -550,13 +548,39 @@ jQuery().ready(function() {
 
 
 
-
+ 
  $(".open10").click(function() {
+   
+  console.log('test')
    if (v.form()) {
-     const code = document.getElementById('ccode')
-     const coursename = document.getElementById('uname')
-     const year = document.getElementById('Year ')
-     const CO1 = document.getElementsByName('hte')
+     const code = document.getElementById('ccode').value
+     const coursename = document.getElementById('uname').value
+     const year = document.getElementById('Year ').value
+     const data = [code,coursename,year]
+     document.getElementsByName('hte').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('eod').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('ao').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('cgp').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('trans').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('can').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('hos').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('CO8').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     const fty = document.getElementById('FTY').value
+     const ftyd = document.getElementById('FTYD').value
+     data.push(fty,ftyd)
+     document.getElementsByName('r16').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('r17').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('r18').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     document.getElementsByName('r19').forEach((value,index)=>{if(value.checked) data.push(value.value)})
+     const suggestion = document.getElementById('text4').value
+     data.push(suggestion)  
+
+     fetch('http://localhost:3000',{
+       method:'POST',
+       headers: {'Content-Type': 'application/json'},
+       body:JSON.stringify({row:data,formtype:"ces-feedback"})
+     })
+     console.log({row:data,formtype:"ces-feedback"})
      $("#loader").show();
       setTimeout(function(){
         $("#basicform").html('<h2>Thanks for your time.</h2>');
