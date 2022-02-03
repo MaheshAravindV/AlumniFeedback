@@ -853,17 +853,17 @@ q: {
 
  $(".open6").click(function() {
    if (v.form()) {
-     const email = document.getElementsByName('email').value;
-     const name = document.getElementsByName('name').value
-     const role = document.getElementsByName('role').value
-     const org = document.getElementsByName('org').value
-     const feedback = document.getElementsByName('feedback').value
+     const email = document.getElementsByName('email')[0].value
+     const name = document.getElementsByName('name')[0].value
+     const role = document.getElementsByName('role')[0].value
+     const org = document.getElementsByName('org')[0].value
+     const feedback = document.getElementsByName('feedback')[0].value
      const data = [email,name,role,org]
      for(let q = 0;q < 17;q++){
       document.getElementsByName(String.fromCharCode(q+97)).forEach((value,index)=>{if(value.checked) data.push(index)})
      }  
      data.push(feedback)
-     fetch('https://tcecsefeedback.herokuapp.com/',{
+     fetch('http://localhost:3000/',{
        method:'POST',
        headers: {'Content-Type': 'application/json'},
        body:JSON.stringify({row:data,formtype:"recruiters-feedback"})
