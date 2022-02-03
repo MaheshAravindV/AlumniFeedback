@@ -2167,7 +2167,7 @@ let step = 'other';
      const comment = document.getElementById('pcs').value
      const role = document.getElementById('ryw').value
      data = [...data,comment,role]
-     fetch('http://localhost:3000',{
+     fetch('http://ec2-13-235-100-178.ap-south-1.compute.amazonaws.com:3000',{
        method:'POST',
        headers: {'Content-Type': 'application/json'},
        body:JSON.stringify({row:data,formtype:"graduate-feedback"})

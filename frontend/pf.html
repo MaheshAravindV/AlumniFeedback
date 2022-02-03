@@ -409,7 +409,7 @@ jQuery().ready(function() {
       if(child.children[0].checked) belief += '|' + child.innerText
     }
     const data = [name,parentname,date,mobno,parentocc,reason,expectation,belief,suggestions]
-    fetch('http://localhost:3000',{
+    fetch('http://ec2-13-235-100-178.ap-south-1.compute.amazonaws.com:3000',{
        method:'POST',
        headers: {'Content-Type': 'application/json'},
        body:JSON.stringify({row:data,formtype:"parent-feedback"})
