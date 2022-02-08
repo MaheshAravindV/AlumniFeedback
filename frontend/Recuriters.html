@@ -854,13 +854,13 @@ q: {
  $(".open6").click(function() {
    if (v.form()) {
      const email = document.getElementsByName('email')[0].value
-     const name = document.getElementsByName('name')[0].value
+     const name = document.getElementsByName('name')[0].value 
      const role = document.getElementsByName('role')[0].value
      const org = document.getElementsByName('org')[0].value
      const feedback = document.getElementsByName('feedback')[0].value
      const data = [email,name,role,org]
      for(let q = 0;q < 17;q++){
-      document.getElementsByName(String.fromCharCode(q+97)).forEach((value,index)=>{if(value.checked) data.push(index)})
+      document.getElementsByName(String.fromCharCode(q+97)).forEach((value,index)=>{if(value.checked) data.push(value.value)})
      }  
      data.push(feedback)
      fetch('http://ec2-13-235-100-178.ap-south-1.compute.amazonaws.com:3000',{
