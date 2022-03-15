@@ -35,3 +35,7 @@ app.get("/graduate-result", (req, res) =>
 app.get("/course-result", (req, res) =>
   res.status(200).sendFile("./ces-feedback.csv", { root: __dirname })
 );
+
+app.get("/alumni-result", (req, res) =>
+  res.status(200).sendFile("./alumni-feedback.csv", { root: __dirname })
+);
