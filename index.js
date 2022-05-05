@@ -39,3 +39,7 @@ app.get("/course-result", (req, res) =>
 app.get("/alumni-result", (req, res) =>
   res.status(200).sendFile("./alumni-feedback.csv", { root: __dirname })
 );
+
+app.get("/employer-result", (req, res) =>
+  res.status(200).sendFile("./employer-feedback.csv", { root: __dirname })
+);
